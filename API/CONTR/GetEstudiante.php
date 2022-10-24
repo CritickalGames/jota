@@ -1,12 +1,18 @@
 <?php
 
     require_once "../MOD/MEstudiante.php";
-    $obj = new ModeloEstudiante();
+    require_once "../MOD/MUsuario.php";
+    $ci = $_GET["ci"];
+    $contra = $_GET["contra"];
+    $objEstudiante = new ModeloEstudiante();
+    $objUsuario = new ModeloUsuario();
 
-    $mostrar=$obj->getEstudiante($ide);
+    //$CI = $_POST['CI'];
+    //$contra = $_POST['Contraseña'];
+    //$mostrar=$objEstudiante->getEstudiante($CI);
 
-    $myJSON = json_encode($mostrar);
+    //$myJSON = json_encode($mostrar);
 
-    echo $myJSON;
+    echo $bool;
 
 ?>

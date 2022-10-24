@@ -11,8 +11,8 @@ $contra = $_POST['Contraseña'];
 
     $obj = new ModeloUsuario();
     //$mostrar['Correo']==$correo && $mostrar['Contraseña']==$contra
-
-    if (($obj->getUsuario($CI, $contra))==TRUE) {
+    $bool=($obj->getUsuario($CI, $contra));
+    if ($bool==TRUE) {
         //echo $mostrar['CI'];
         //echo "Exito";
         header("Location: ./../../HTML/Promedio.html");
