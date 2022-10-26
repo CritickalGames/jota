@@ -5,19 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="API/CONTR/prob1.js"></script>
     <script src="API/CONTR/GetEstudiante.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
-    <form action="API/CONTR/Login.php" method="post">
+    <form method="post">
         <h1>LOGIN</h1>
-        <input type="text" name="CI" placeholder="CI">
+        <input type="text" id="CI" placeholder="CI">
         <br>
-        <input type="text" name="Contraseña" placeholder="Contraseña">
+        <input type="text" id="Contraseña" placeholder="Contraseña">
         <br>
-        <input type="submit" value="Login">
+        <input type="submit" onclick="algo()" value="Login">
     </form>
     
+    <table id="table">
+        <tr>
+            <th id="ide">IdE</th>
+            <th id="idu">IdU</th>
+            <th id="idg">IdG</th>
+        </tr>
+    </table>
 </body>
 </html>
