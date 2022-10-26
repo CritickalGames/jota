@@ -32,25 +32,25 @@ FOREIGN KEY(ide) REFERENCES estudiante(ide),
 PRIMARY KEY(idp));
 
 
-insert into usuario (ci, nombre, apellido) values
-(19123456,'Mengano', 'de Tal'),
-(19234567,'Sultano', 'de Tal'),
-(19312345,'Ben', 'Once'),
-(29412345,'Fulano', 'de Tal'),
-(29512345,'Ale', 'Van Tarse'),
-(39612345,'Elsa', 'Pato'),
-(39712345,'Susana', 'Horia'),
-(49812345,'Esteban', 'Quito'),
-(49912345,'N. L. C.', 'Jhon'),
-(59223456,'Elsa', 'Lame'),
-(59323456,'Elsa', 'Payo'),
-(69523456,'Homero', 'Sinson'),
-(16423456,'Lisa', 'Sinson'),
-(15223456,'Barto', 'Sinson'),
-(14123456,'Margerine', 'Sinson'),
-(23123456,'Mengana', 'de Tallez'),
-(22123456,'Sultana', 'de Tallez'),
-(21123456,'Bruno', 'Diez');
+insert into usuario (ci, nombre, apellido, pass) values
+(19123456,'Mengano', 'de Tal', "1"),
+(19234567,'Sultano', 'de Tal', "1"),
+(19312345,'Ben', 'Once', "1"),
+(29412345,'Fulano', 'de Tal', "1"),
+(29512345,'Ale', 'Van Tarse', "1"),
+(39612345,'Elsa', 'Pato', "1"),
+(39712345,'Susana', 'Horia', "1"),
+(49812345,'Esteban', 'Quito', "1"),
+(49912345,'N. L. C.', 'Jhon', "1"),
+(59223456,'Elsa', 'Lame', "1"),
+(59323456,'Elsa', 'Payo', "1"),
+(69523456,'Homero', 'Sinson', "1"),
+(16423456,'Lisa', 'Sinson', "1"),
+(15223456,'Barto', 'Sinson', "1"),
+(14123456,'Margerine', 'Sinson', "1"),
+(23123456,'Mengana', 'de Tallez', "1"),
+(22123456,'Sultana', 'de Tallez', "1"),
+(21123456,'Bruno', 'Diez', "1");
 
 
 insert into grupo (nombre, materia) values

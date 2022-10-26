@@ -2,8 +2,7 @@
 
     require_once "../MOD/MEstudiante.php";
     require_once "../MOD/MUsuario.php";
-    $ci = $_GET["ci"];
-    $contra = $_GET["contra"];
+
     $objEstudiante = new ModeloEstudiante();
     $objUsuario = new ModeloUsuario();
 

@@ -11,14 +11,21 @@ $contra = $_POST['Contraseña'];
 
     $obj = new ModeloUsuario();
     //$mostrar['Correo']==$correo && $mostrar['Contraseña']==$contra
-    $bool=($obj->getUsuario($CI, $contra));
-    if ($bool==TRUE) {
-        //echo $mostrar['CI'];
+    $myUser=($obj->getUsuario($CI, $contra));
+    if ($myUser==TRUE) {
+        //var_dump ($myUser["ci"]);
         //echo "Exito";
-        header("Location: ./../../HTML/Promedio.html");
+        //header("Location: ./../../HTML/Promedio.html");
+        ?>
+        <script>
+
+            
+
+        </script>        
+        <?php
     }else{
         echo "fail";
-        header("Location: ./../../Index.html");
+        //header("Location: ./../../Index.html");
     }
     
     
